@@ -3,12 +3,16 @@ Projeto de desafio do primeiro modulo node bootcamp 7 => 25/06/2019
 
 rotas[
    GET /projects // - Lista os projetos e suas respectivas tasks
+   
    PUT /projects/:id - Altera o title do projeto do id que veio por parametro{
       -Recebe um json como parametro como este : { "title":"Projeto Alterado 3"}
    }
+   
    POST /projects  // - Insere um novo projeto sem task {
       - Recebe um json como parametro como este : {"id":"5",	"title":"Novo Projeto id 5"}
    }
+   
+   
    POST /projects/:id/tasks // - Insere uma nova task para um projeto {
       - Recebe um json como parametro como este : {"title":"Nova Task para Projeto id 1"}
    }
